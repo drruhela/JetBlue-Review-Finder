@@ -1,46 +1,50 @@
 package main;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class main {
+public class starRating {
 	public static int ratingLength = " Rating: ".length() + 1;
 	
 	public static void main(String[] args) throws FileNotFoundException {
 		File file = new File("C:\\Users\\ellix\\Downloads\\Ratings.txt");
-		Scanner input = new Scanner(file);
+		Scanner in = new Scanner(file);
 		
 		String rating;
+		String input; 
 		double totalRating = 0; 
 		int totReviewers = 0; 
 		List <String> list = new ArrayList <String>(); 
 		
-		while (input.hasNext()) {
-			list.add(input.nextLine());
-		}
-		for (int i = 0; i < list.size(); i++) { 
-			if (list.get(i).contains ("Rating: ") && list.get(i).contains("-")) {
+		while (in.hasNext()) {
+			input = in.nextLine(); 
+			if (input.contains ("Rating: ") && input.contains("-")) {
 				//System.out.println(line.substring(ratingLength));
-				rating = list.get(i).substring(ratingLength, list.get(i).indexOf("-"));
+				rating = input.substring(ratingLength, input.indexOf("-"));
 				if (rating.contains("/")){
-					int thisReviewers = reviewers (rating, list.get(i));
+					int thisReviewers = reviewers (rating, input);
 					totReviewers = thisReviewers + totReviewers;
 					totalRating = toStar (rating) * thisReviewers + totalRating;
 				}
 				else if (rating.contains("%")) {
-					int thisReviewers = reviewers (rating, list.get(i));
+					int thisReviewers = reviewers (rating, input);
 					totalRating = Double.parseDouble(rating.substring(0, rating.indexOf("%")))/100 * 5 * thisReviewers + totalRating;
 					totReviewers = thisReviewers + totReviewers;
 				}
 				else {
-					int thisReviewers = reviewers (rating, list.get(i));
+					int thisReviewers = reviewers (rating, input);
 					totalRating = Double.parseDouble(rating) * thisReviewers + totalRating;
 					totReviewers = thisReviewers + totReviewers;
 				}
 			}
+			
+		}
+		in.close(); 
+		
+		for (int i = 0; i < list.size(); i++) { 
+			
 		}
 		System.out.println("total rating " + totalRating + " total reviewers " + totReviewers);
 		double averageRating = (totalRating/totReviewers); 
