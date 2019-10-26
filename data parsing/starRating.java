@@ -16,7 +16,6 @@ public class starRating {
 		String input; 
 		double totalRating = 0; 
 		int totReviewers = 0; 
-		List <String> list = new ArrayList <String>(); 
 		
 		while (in.hasNext()) {
 			input = in.nextLine(); 
@@ -43,9 +42,6 @@ public class starRating {
 		}
 		in.close(); 
 		
-		for (int i = 0; i < list.size(); i++) { 
-			
-		}
 		System.out.println("total rating " + totalRating + " total reviewers " + totReviewers);
 		double averageRating = (totalRating/totReviewers); 
 		System.out.println(String.format("%.2f",averageRating));
