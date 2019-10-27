@@ -1608,11 +1608,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "twitterJetBlueReviews",
-      "projectName": "twitterJetBlueReviews",
-      "projectPath": "D:\\Documents\\Code\\JetBlue-Review-Finder\\WebScrapeTwitter\\twitterJetBlueReviews\\.local",
+      "projectUniqueName": "jetBlueReviewsScraper",
+      "projectName": "jetBlueReviewsScraper",
+      "projectPath": "D:\\Documents\\Code\\JetBlue-Review-Finder\\WebScrapeTwitter\\jetBlueReviewsScraper\\.local",
       "packagesPath": "C:\\Users\\drruh\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Code\\JetBlue-Review-Finder\\WebScrapeTwitter\\twitterJetBlueReviews\\.local"
+      "outputPath": "D:\\Documents\\Code\\JetBlue-Review-Finder\\WebScrapeTwitter\\jetBlueReviewsScraper\\.local"
     },
     "frameworks": {
       "net461": {
