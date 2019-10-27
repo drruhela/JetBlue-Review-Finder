@@ -108,6 +108,21 @@
         "C:\\Users\\Arielle\\.nuget\\packages\\uipath.vision/1.8.1\\lib/net452/UiPath.Vision.Tesseract.dll",
         "C:\\Users\\Arielle\\.nuget\\packages\\uipath.vision/1.8.1\\lib/net452/UiPath.Vision.dll"
       ]
+    },
+    {
+      "Package": {
+        "Id": "FirebaseConnector",
+        "Version": "1.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Arielle\\.nuget\\packages\\firebaseconnector/1.1.0\\lib/FirebaseConnectorActivity.dll",
+        "C:\\Users\\Arielle\\.nuget\\packages\\google.apis/1.38.0\\lib/net45/Google.Apis.dll",
+        "C:\\Users\\Arielle\\.nuget\\packages\\google.apis/1.38.0\\lib/net45/Google.Apis.PlatformServices.dll",
+        "C:\\Users\\Arielle\\.nuget\\packages\\google.apis.auth/1.38.0\\lib/net45/Google.Apis.Auth.dll",
+        "C:\\Users\\Arielle\\.nuget\\packages\\google.apis.auth/1.38.0\\lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\Arielle\\.nuget\\packages\\google.apis.core/1.38.0\\lib/net45/Google.Apis.Core.dll",
+        "C:\\Users\\Arielle\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll"
+      ]
     }
   ],
   "Conflicts": [],
@@ -146,6 +161,58 @@
       "Id": "Extended.Wpf.Toolkit",
       "Version": "2.8.0",
       "Dependencies": []
+    },
+    "FirebaseConnector": {
+      "Id": "FirebaseConnector",
+      "Version": "1.1.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.38.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[9.0.1, )"
+        }
+      ]
+    },
+    "Google.Apis": {
+      "Id": "Google.Apis",
+      "Version": "1.38.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis.Core",
+          "Item2": "[1.38.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Auth": {
+      "Id": "Google.Apis.Auth",
+      "Version": "1.38.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis.Core",
+          "Item2": "[1.38.0, )"
+        },
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.38.0, )"
+        }
+      ]
+    },
+    "Google.Apis.Core": {
+      "Id": "Google.Apis.Core",
+      "Version": "1.38.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.2, )"
+        }
+      ]
     },
     "Humanizer.Core": {
       "Id": "Humanizer.Core",

@@ -3,6 +3,7 @@
   "description": "Maybe Ik",
   "main": "Main.xaml",
   "dependencies": {
+    "FirebaseConnector": "[1.1.0]",
     "UiPath.Excel.Activities": "[2.7.1-ce]",
     "UiPath.Mail.Activities": "[1.7.1-ce]",
     "UiPath.System.Activities": "[19.10.0-ce]",
@@ -29,7 +30,8 @@
     "libraryOptions": {
       "includeOriginalXaml": false,
       "privateWorkflows": []
-    }
+    },
+    "fileInfos": []
   },
   "expressionLanguage": "VisualBasic"
 }
