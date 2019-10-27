@@ -1604,15 +1604,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\drruh\\.nuget\\packages\\": {}
+    "C:\\Users\\Arielle\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "jetBlueReviewsScraper",
       "projectName": "jetBlueReviewsScraper",
-      "projectPath": "D:\\Documents\\Code\\JetBlue-Review-Finder\\WebScrapeTwitter\\jetBlueReviewsScraper\\.local",
-      "packagesPath": "C:\\Users\\drruh\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Code\\JetBlue-Review-Finder\\WebScrapeTwitter\\jetBlueReviewsScraper\\.local"
+      "projectPath": "C:\\Users\\Arielle\\Documents\\GitHub\\JetBlue-Review-Finder\\WebScrapeTwitter\\jetBlueReviewsScraper\\.local",
+      "packagesPath": "C:\\Users\\Arielle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Arielle\\Documents\\GitHub\\JetBlue-Review-Finder\\WebScrapeTwitter\\jetBlueReviewsScraper\\.local"
     },
     "frameworks": {
       "net461": {
