@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="612,1083.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="495.2,268.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -51,19 +51,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="550.4,890.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.facebook.com/search/str/%23jetblue/keywords_blended_posts?f=AbpcBpVNmeCabqCNkyqkwJlx3QYV3srUUWcv-7Ulscf6YHlpgHizycEP8YaAqdn97u3cLeFr9GVyfSPc7MYSgm33gFQULcZhB40phooj0dMypVgIbHamN4e_SCZIdjPAVMY&amp;filters=eyJycF9hdXRob3IiOiJ7XCJuYW1lXCI6XCJtZXJnZWRfcHVibGljX3Bvc3RzXCIsXCJhcmdzXCI6XCJcIn0ifQ%3D%3D&amp;epa=SEE_MORE">
+    <ui:OpenBrowser BrowserType="Firefox" CommunicationMethod="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open Browser" Hidden="{x:Null}" sap:VirtualizedContainerService.HintSize="550.4,890.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" Url="https://www.google.com/search?q=%23jetblue+site:facebook.com&amp;sxsrf=ACYBGNTPw7ix4Zezp-2wpfiC9l_ciKsl3g:1572134456216&amp;ei=ON60XdjpDM7U5gKD7IrwBQ&amp;start=10&amp;sa=N&amp;ved=0ahUKEwjY5bSekbvlAhVOqlkKHQO2Al44HhDy0wMIeA&amp;biw=1536&amp;bih=728">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="516.8,790.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="516.8,790.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="475.2,697.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="475.2,697.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
               </Sequence.Variables>
@@ -72,29 +72,29 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:BrowserScope Browser="{x:Null}" BrowserType="Firefox" ContinueOnError="{x:Null}" DisplayName="Attach Browser 'jetblueFa Page'" sap:VirtualizedContainerService.HintSize="433.6,604.8" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="e958802af5ea9f43e8d7e500836e7f2c" SearchScope="{x:Null}" Selector="&lt;html app='firefox.exe' title='#jetblue – Facebook Search' /&gt;" TimeoutMS="{x:Null}" UiBrowser="{x:Null}">
+              <ui:BrowserScope Browser="{x:Null}" BrowserType="Firefox" ContinueOnError="{x:Null}" DisplayName="Attach Browser 'jetbluesi Page'" sap:VirtualizedContainerService.HintSize="433.6,604.8" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="fa7a93cf24f90868f3d0bfa59c5a89f2" SearchScope="{x:Null}" Selector="&lt;html app='firefox.exe' title='#jetblue site:facebook.com - Google Search' /&gt;" TimeoutMS="{x:Null}" UiBrowser="{x:Null}">
                 <ui:BrowserScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,457.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,457.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:ExtractData ContinueOnError="True" DataTable="[ExtractDataTable]" DelayBetweenPagesMS="{x:Null}" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Posts' attr='text'&gt;&lt;webctrl tag='div' class='_19_p'/&gt;&lt;webctrl tag='div' class='_401d' idx='1'/&gt;&lt;webctrl tag='div' class='_6rbb' idx='1'/&gt;&lt;webctrl tag='div' class='_6rp0' idx='1'/&gt;&lt;webctrl tag='div' class='_6-e5 _401d' idx='1'/&gt;&lt;webctrl tag='div' class='_6-co' idx='1'/&gt;&lt;webctrl tag='div' class='_6-cp' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="100" NextLinkSelector="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="True">
+                      <ui:ExtractData ContinueOnError="True" DataTable="[ExtractDataTable]" DelayBetweenPagesMS="{x:Null}" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' class='g'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='div' class='rc' idx='1'/&gt;&lt;webctrl tag='div' class='s' idx='1'/&gt;&lt;webctrl tag='div' idx='1'/&gt;&lt;webctrl tag='span' class='st' idx='1'/&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_3" MaxNumberOfResults="150" NextLinkSelector="&lt;webctrl aaname='Next' parentid='pnnext' tag='SPAN' /&gt;" SendWindowMessages="{x:Null}" SimulateClick="True">
                         <ui:ExtractData.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="21052d17b98df8faa37ed791b1c9fe8c" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='u_ps_0_3_4' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cdf43ef7c931b7dc70969341e15dbd8d" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='rso' tag='DIV' /&gt;" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
                           </ui:Target>
                         </ui:ExtractData.Target>
                       </ui:ExtractData>
-                      <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" Encoding="{x:Null}" FilePath="C:\Users\Arielle\Documents\GitHub\JetBlue-Review-Finder\FacebookScraping\facebookPosts.txt" sap:VirtualizedContainerService.HintSize="333.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" />
-                      <ui:CloseTab Browser="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+                      <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" Encoding="{x:Null}" FilePath="C:\Users\Arielle\Documents\GitHub\JetBlue-Review-Finder\FacebookScraping\posts.txt" sap:VirtualizedContainerService.HintSize="333.6,155.2" sap2010:WorkflowViewState.IdRef="WriteCsvFile_3" />
+                      <ui:CloseTab Browser="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="CloseTab_2" />
                     </Sequence>
                   </ActivityAction>
                 </ui:BrowserScope.Body>
